@@ -46,7 +46,7 @@ Para utilizar um modelo diferente, basta fornecer o nome do arquivo do modelo co
 
 Este projeto foi desenvolvido por [Higor Diego](https://higordiego.com.br). 
 
-Se você tiver alguma dúvida ou sugestão, entre em contato pelo email [contato@higordiego.com.br](mailto:contato@higordiego.com.br).
+Se você tiver alguma dúvida ou sugestão, entre em contato pelo email [me@higordiego.com.br](mailto:me@higordiego.com.br).
 
 
 
