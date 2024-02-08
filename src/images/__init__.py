@@ -11,17 +11,11 @@ def enhance_image(image_path, model_path, name):
     model_name = name.split('/')[-2] if '/' in name else name.split('_')[0]
 
     scale_factor = int(model_version[1])
-
     sr.setModel(model_name, scale_factor)
     if is_cuda_cv() > 0:
         sr.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
         sr.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
-    
-
     image = cv2.imread(image_path)
-    image = image.astype('float32') / 255.0
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    image = cv2.resize(image, None, fx=scale_factor, fy=scale_factor, interpolation=cv2.INTER_CUBIC)
 
     enhanced_image = sr.upsample(image)
     enhanced_image = (enhanced_image * 255.0).astype('uint8')
