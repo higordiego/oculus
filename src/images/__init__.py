@@ -11,8 +11,6 @@ def enhance_image(image_path, model_path, name):
     model_name = name.split('/')[-2] if '/' in name else name.split('_')[0]
 
     scale_factor = int(model_version[1])
-
-    print(model_name, scale_factor)
     sr.setModel(model_name, scale_factor)
     if is_cuda_cv() > 0:
         sr.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
