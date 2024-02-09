@@ -22,8 +22,7 @@ def main():
     model_folder = os.path.dirname(args.model)
     model_version = args.model.split('_')[1].split('.')[0] if len(args.model.split('_')) > 1 else None
 
-
-    pwd_directory = os.getcwd()
+    pwd_directory = "{}/models".format(os.getcwd())
     model_directory = os.path.join(pwd_directory, args.model)
 
     if args.type == 'image':
