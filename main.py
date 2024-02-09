@@ -22,7 +22,7 @@ def main():
     model_folder = os.path.dirname(args.model)
     model_version = args.model.split('_')[1].split('.')[0] if len(args.model.split('_')) > 1 else None
 
-    pwd_directory = "{}/models".format(os.getcwd())
+    pwd_directory = os.getcwd()
     model_directory = os.path.join(pwd_directory, args.model)
 
     if args.type == 'image':
@@ -30,7 +30,7 @@ def main():
         enhanced_image = enhance_image(args.input, model_directory, args.model)
         cv2.imwrite(args.output, enhanced_image)
     elif args.type == 'video':
-        print('[x] - Aguarde um momento enquanto processamos sua video...')
+        print('[x] - Aguarde um momento enquanto processamos seu video...')
         super_resolve_video(args.input, args.output, model_directory, args.model)
 
 if __name__ == "__main__":
