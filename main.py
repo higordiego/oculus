@@ -27,14 +27,6 @@ def main():
     model_directory = os.path.join(pwd_directory, args.model)
 
     if args.type == 'image':
-        if model_folder != 'edsr':
-            print("Modelo incorreto para melhoria de imagem. Use um modelo EDSR.")
-            sys.exit(1)
-        elif model_version and model_version not in ['x3', 'x4']:
-            print("Versão do modelo incorreta para melhoria de imagem. Use uma versão EDSR_x3 ou EDSR_x4.")
-            sys.exit(1)
-
-    if args.type == 'image':
         print('[x] - Aguarde um momento enquanto processamos sua imagem...')
         enhanced_image = enhance_image(args.input, model_directory, args.model)
         cv2.imwrite(args.output, enhanced_image)
