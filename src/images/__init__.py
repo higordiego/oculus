@@ -18,6 +18,5 @@ def enhance_image(image_path, model_path, name):
     image = cv2.imread(image_path)
 
     enhanced_image = sr.upsample(image)
-    enhanced_image = (enhanced_image * 255.0).astype('uint8')
 
     return enhanced_image
