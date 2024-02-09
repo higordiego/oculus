@@ -40,6 +40,7 @@ pip3 install -r requirements.txt
 
 Transformar suas imagens e vídeos é tão simples quanto executar:
 
+
 ```sh
 python3 main.py --input seu_arquivo.png --output saida.png --model models/edsr/edsr_x4.pb --type image
 ```
@@ -47,6 +48,7 @@ python3 main.py --input seu_arquivo.png --output saida.png --model models/edsr/e
 ```sh
 python3 main.py --input video.mp4 --output video.avi --model models/fsrcnn/fsrcnn-small_x4.pb --type video
 ```
+
 ### Escolha Seu Modelo
 
 Atualmente, oferecemos suporte a:
@@ -67,4 +69,5 @@ Este projeto é disponibilizado sob a licença MIT. Por favor, consulte o arquiv
 ## 💌 Contato
 
 [Higor Diego](https://higordiego.com.br) - Para perguntas ou colaborações, não hesite em me enviar um [e-mail](mailto:me@higordiego.com.br).
+
 
