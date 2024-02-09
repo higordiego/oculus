@@ -30,16 +30,15 @@ def main():
         print('[x] - Aguarde um momento enquanto processamos sua imagem...')
         enhanced_image = enhance_image(args.input, model_directory, args.model)
         cv2.imwrite(args.output, enhanced_image)
-        sys.exit(1)
     elif args.type == 'video':
         print('[x] - Aguarde um momento enquanto processamos sua video...')
         super_resolve_video(args.input, args.output, model_directory, args.model)
-        sys.exit(1)
 
 if __name__ == "__main__":
   try:
     main()
     print('[x] - Processamento finalizado, espero ter ajuda-lo.')
+    sys.exit(1)
   except KeyboardInterrupt:
     print("\nOperação interrompida pelo usuário.")
     sys.exit(0)
