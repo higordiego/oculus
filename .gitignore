@@ -4,6 +4,11 @@ __pycache__/
 .DS_Store
 *$py.class
 .idea
+*.jpeg
+*.png
+*.jpg
+*.mp4
+*.avi
 
 # C extensions
 *.so

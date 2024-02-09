@@ -1,3 +1,5 @@
 colorama
 opencv-python
 opencv-contrib-python
+pillow_heif
+Pillow
