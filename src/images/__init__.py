@@ -42,7 +42,7 @@ def get_params_geo(geo):
     
 def dms_to_decimal(dms, direction):
     degrees, minutes, seconds = dms
-    decimal = degrees + minutes/60 + seconds/3600
+    decimal = float(degrees) + float(minutes)/60 + float(seconds)/3600
     if direction in ['S', 'W']:
         decimal *= -1
     elif direction in ['E', 'N']:
