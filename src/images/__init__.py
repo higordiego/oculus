@@ -42,9 +42,11 @@ def get_params_geo(geo):
     
 def dms_to_decimal(dms, direction):
     degrees, minutes, seconds = dms
-    decimal = float(degrees) + float(minutes)/60 + float(seconds)/3600
-    if direction in ['S', 'W']:  # S = sul, W = oeste
+    decimal = degrees + minutes/60 + seconds/3600
+    if direction in ['S', 'W']:
         decimal *= -1
+    elif direction in ['E', 'N']:
+        decimal *= 1
     return decimal
 
 def extract_info_image(image_path):

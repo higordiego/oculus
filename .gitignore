@@ -9,6 +9,7 @@ __pycache__/
 *.jpg
 *.mp4
 *.avi
+test.py
 
 # C extensions
 *.so
