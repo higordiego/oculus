@@ -83,11 +83,11 @@ def extract_info_image(image_path):
     
     for item in geo:
         data = geo.get(item)
-        
         print(f"{item:{max_label_length}}: {data}")
 
     file_hash = calculate_hash(image_path)
-    print(f"{'maps':{max_label_length}}: {get_params_geo(geo)}\n") 
+    if geo:
+        print(f"{'maps':{max_label_length}}: {get_params_geo(geo)}\n") 
     if file_hash:
         print(f"{'hash':{max_label_length}}: {file_hash}\n")
     
