@@ -1,5 +1,24 @@
 import cv2
+import os
 from src.helpers import is_cuda_cv
+
+
+def extract_frames_and_process(video_path, output_folder):
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+
+    cap = cv2.VideoCapture(video_path)
+    frame_count = 0
+    while cap.isOpened():
+        ret, frame = cap.read()
+        if not ret:
+            break
+        frame_path = os.path.join(output_folder, f"frame_{frame_count}.jpg")
+        cv2.imwrite(frame_path, frame)
+        frame_count += 1
+    cap.release()
+    cv2.destroyAllWindows()
+    return frame_count
 
 def super_resolve_video(input_video, output_video, model_path, name):
     sr = cv2.dnn_superres.DnnSuperResImpl_create()

@@ -10,7 +10,7 @@ __pycache__/
 *.mp4
 *.avi
 test.py
-
+frames
 # C extensions
 *.so
 
