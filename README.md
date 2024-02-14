@@ -10,7 +10,7 @@
             \/                      \/ 
 ```
 
-Bem-vindo ao Oculus, sua ferramenta Python definitiva para transformar imagens e vídeos comuns em obras-primas de alta definição. Utilizando o poder dos modelos de Redes Neurais Profundas (DNN), o Oculus é a ponte para um mundo onde a resolução elevada e a nitidez excepcional definem o novo padrão de qualidade visual. Além disso, o Oculus oferece uma gama de recursos adicionais para aprimorar suas criações visuais e facilitar seu fluxo de trabalho em análise de foto ou vídeo.
+Bem-vindo ao Oculus, sua definitiva para transformar imagens e vídeos comuns em obras-primas de alta definição. Utilizando o poder dos modelos de Redes Neurais Profundas (DNN), o Oculus é a ponte para um mundo onde a resolução elevada e a nitidez excepcional definem o novo padrão de qualidade visual. Além disso, o Oculus oferece uma gama de recursos adicionais para aprimorar suas criações visuais e facilitar seu fluxo de trabalho em análise de foto ou vídeo.
 
 ## 🌈 Funcionalidades
 
